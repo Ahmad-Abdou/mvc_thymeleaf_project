@@ -60,7 +60,7 @@
                             <a href="#" class="btn btn-warning" >Edit</a>
                         </td>
                         <td>
-                            <a href="#" class="btn btn-danger" >Delete</a>
+                            <a th:href="@{/admin/product/delete/{id} (id=${productDto.id})}" class="btn btn-danger" >Delete</a>
                         </td>
                     </tr>
 
@@ -70,7 +70,7 @@
         </div>
 
         <div class="card-footer">
-            <a href="#" class="btn btn-danger" >Back</a>
+            <a th:href="@{/}" class="btn btn-danger" >Back</a>
 
         </div>
     </div>
